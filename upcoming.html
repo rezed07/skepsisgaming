@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Tournament - Skepsis Gaming</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-bar">
+      <div class="logo">
+        <img src="logo.png" alt="Skepsis Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="upcoming.html">Upcoming Event</a></li>
+          <li><a href="season.html">Season Event</a></li>
+          <li><a href="roster.html">Team Roster</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="event-section">
+    <div class="event-content">
+        <h2>Upcoming Tournament</h2>
+        <p>Date: September 19, 2024 - 15:00 CEST</p>
+        <div id="countdown">
+            <p id="timer"></p>
+        </div>
+        <a href="https://matcherino.com/t/sxs_season_1" class="btn" target="_blank">Join on Matcherino</a>
+    </div>
+</section>
+
+<script>
+    function updateCountdown() {
+        const endDate = new Date('September 19, 2024 15:00:00 GMT+0200');
+        const now = new Date();
+        const timeDifference = endDate - now;
+
+        if (timeDifference <= 0) {
+            document.getElementById('timer').innerText = 'The tournament has started!';
+            return;
+        }
+
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+        document.getElementById('timer').innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    setInterval(updateCountdown, 1000);
+    updateCountdown(); // Initial call to display the timer immediately
+</script>
+
+
+  <footer>
+    <p>&copy; 2024 Skepsis Gaming. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

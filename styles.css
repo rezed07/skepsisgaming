@@ -1,0 +1,277 @@
+/* Stili generali */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Fissa lo sfondo mentre si scorre */
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-top: 60px; /* Aggiunge spazio per evitare la sovrapposizione dell'header */
+}
+
+/* Header */
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    z-index: 100;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Aggiunge un'ombra per separare visivamente la barra dal contenuto */
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Per evitare che il contenuto si sovrapponga alla barra di navigazione */
+body {
+    padding-top: 60px; /* Aggiunge un margine superiore per compensare l'altezza del menu */
+}
+
+
+.logo img {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff0000;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: none; /* Rimuove lo sfondo locale poiché è già globale */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+}
+
+/* Sezione Evento Prossimo */
+.event-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Sfondo trasparente */
+    border-radius: 10px;
+}
+
+.event-section h2 {
+    font-size: 2.5rem;
+}
+
+.event-content .btn {
+    background-color: #ff0000;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.event-content .btn:hover {
+    background-color: #cc0000;
+}
+
+/* Sezione Roster */
+.roster-section {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(30, 30, 30, 0.8); /* Trasparente */
+    border-radius: 10px;
+    color: white;
+}
+
+.roster-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.player-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(43, 43, 43, 0.8);
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.player-card img.player-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border: 2px solid #ff0000;
+}
+
+.player-info {
+    text-align: left;
+}
+
+.player-info h3 {
+    font-size: 1.8rem;
+    color: #ff0000;
+}
+
+.player-info p {
+    font-size: 1.2rem;
+}
+
+.social-links a {
+    font-size: 1rem;
+    color: #ff0000;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffffff;
+}
+
+.player-banner {
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sezione Shop */
+.shop-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(244, 244, 244, 0.8); /* Trasparente */
+    border-radius: 10px;
+}
+
+.shop-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #000;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.product-image img {
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+.product-details {
+    margin-left: 40px;
+    text-align: left;
+}
+
+.product-details h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.product-details p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.product-details strong {
+    color: #ff0000;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer-content p {
+    font-size: 1rem;
+}
+
+.social-media a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-left: 20px;
+}
+
+.social-media a:hover {
+    color: #ff0000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-container {
+        flex-direction: column;
+    }
+
+    .product-details {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    .player-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .player-card img.player-image {
+        margin: 0 auto 20px;
+    }
+
+    .social-links {
+        text-align: center;
+    }
+}
