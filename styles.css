@@ -275,3 +275,55 @@ footer {
         text-align: center;
     }
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #f1f1f1;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    color: #e50914;
+}
+.section-title {
+    color: #e50914;
+    margin-top: 40px;
+}
+.tournament-info, .interactive-schedule {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 5px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    background: #333;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+ul li:hover {
+    background: #444;
+}
+.tournament-details {
+    display: none;
+    background-color: #111;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.tournament-details h2 {
+    color: #e50914;
+}
+

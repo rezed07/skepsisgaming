@@ -1,42 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Season Event - Skepsis Gaming</title>
-  <link rel="stylesheet" href="styles.css">
-<link rel="icon" type="image/png" href="logo.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skepsis Season Event</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <script src="roster.js"></script>
 </head>
 <body>
-
-  <header>
-    <div class="nav-bar">
-      <div class="logo">
-        <img src="logo.png" alt="Skepsis Logo">
+    <!-- Barra Superiore Fissa -->
+    <header>
+      <div class="nav-bar">
+        <div class="logo">
+          <img src="logo.png" alt="Skepsis Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="upcoming.html">Upcoming Event</a></li>
+            <li><a href="season.html">Season Event</a></li>
+            <li><a href="roster.html">Team Roster</a></li>
+            <li><a href="shop.html">Shop</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="upcoming.html">Upcoming Event</a></li>
-          <li><a href="season.html">Season Event</a></li>
-          <li><a href="roster.html">Team Roster</a></li>
-          <li><a href="shop.html">Shop</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    </header>
 
-  <section class="season-section">
-    <div class="season-content">
-      <h2>Skepsis Season Event</h2>
-      <p>Check out the latest Skepsis Season event! Click below to learn more.</p>
-      <a href="https://matcherino.com/t/sxs_season_1" class="btn" target="_blank">View Event on Matcherino</a>
-    </div>
-  </section>
+    <!-- Contenuto Principale -->
+    <div class="container">
+        <h1>Skepsis Season Event</h1>
 
-  <footer>
-    <p>&copy; 2024 Skepsis Gaming. All rights reserved.</p>
-  </footer>
+        <section>
+            <h2 class="section-title">Introduction</h2>
+            <p>
+                Skepsis Gaming Season is a series of tournaments to qualify for the final tournament of $250+ 
+                (Total prize pool of all tournaments about $400+). Everyone can register but it is mandatory 
+                to be inside our discord server.
+            </p>
+        </section>
+
+        <section>
+            <h2 class="section-title">General Information</h2>
+            <ul>
+                <li>The season will last approximately 4 months.</li>
+                <li>All tournaments will be held on the Matcherino website.</li>
+                <li>There are 3 ways to qualify: Points tournaments, Direct qualification, and Last Chance Qualifier (LCQ).</li>
+                <li>All tournaments will have a maximum number of teams and a check-in before starting.</li>
+                <li>All support will be given via our Discord server, in the ticket section.</li>
+                <li>Official Skepsis casters will cast all tournaments.</li>
+                <li>Weekend tournaments have 256 team max, while tournaments on weekdays have a 128 team max.</li>
+            </ul>
+        </section>
+
+        <!-- Lista dei tornei interattiva -->
+        <section>
+            <h2 class="section-title">Interactive Tournament Schedule</h2>
+
+            <div class="interactive-schedule">
+                <ul id="tournament-list">
+                    <!-- Lista dinamica dei tornei -->
+                </ul>
+                <div id="tournament-details" class="tournament-details">
+                    <!-- Dettagli del torneo selezionato -->
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="section-title">General Rules</h2>
+            <ul>
+                <li>Teams that do not have the friendship of the streamer will not be entitled to the prize pool or points.</li>
+                <li>Teams not present inside the server will not receive points.</li>
+                <li>Only Skepsis casters can stream the LCQ and final phases.</li>
+                <li>Age limitations may change depending on Supercell and Matcherino TOS.</li>
+                <li>Account sharing is strictly forbidden.</li>
+                <li>Roster changes are not allowed during the season.</li>
+            </ul>
+        </section>
+    </div>
+
+    <!-- Barra Inferiore Fissa -->
+    <footer>
+      <p>&copy; 2024 Skepsis Gaming. All rights reserved.</p>
+    </footer>
 
 </body>
 </html>
