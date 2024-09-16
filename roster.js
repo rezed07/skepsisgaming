@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
   // Array con le informazioni dei tornei
 const tournaments = [
-  { id: 1, name: "#1 Point Tournament", date: "15 September 2024", time: "3pm UTC+2" },
+  { id: 1, name: "#1 Point Tournament", date: "19 September 2024", time: "3pm UTC+2" },
   { id: 2, name: "#2 Point Tournament", date: "29 September 2024", time: "3pm UTC+2" },
   { id: 3, name: "#3 Point Tournament", date: "6 October 2024", time: "3pm UTC+2" },
   { id: 4, name: "Qualification Tournament", date: "13 October 2024", time: "3pm UTC+2" },
